@@ -192,6 +192,7 @@
   .cta-row {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 12px;
     margin-bottom: 20px;
   }
@@ -202,14 +203,35 @@
     justify-content: center;
     gap: 10px;
     min-height: 52px;
-    padding: 0 20px;
+    padding: 0 22px;
     border-radius: 999px;
     text-decoration: none;
     border: 1px solid var(--line-strong);
     background: transparent;
     font-size: 0.96rem;
     font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    -webkit-appearance: none;
+    appearance: none;
     transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+  }
+
+  .button svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex: 0 0 auto;
+  }
+
+  .button svg polygon {
+    fill: currentColor;
+    stroke: none;
   }
 
   .button.primary {
